@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h3 Question: #{question}
+  div(class='row')
+    div(class='result')
+     div(class='char')= from.char
+     div #{from.name} (#{from.number})
+    div(class='change') 
+      each val in changing
+        div= val
+      div &nbsp;
+    div(class='result')
+      div(class='char')= to.char     
+      div #{to.name} (#{to.number})
+

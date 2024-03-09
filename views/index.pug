@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  div
+    form(action='/ask', method='POST')
+      p Ask your question?
+        input(
+          type='text'
+          name='ask'
+        )
+        input(type='submit', value='Ask')
